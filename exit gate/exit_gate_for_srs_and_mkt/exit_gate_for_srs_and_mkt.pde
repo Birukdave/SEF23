@@ -1,3 +1,4 @@
+String station="srs";
 import static javax.swing.JOptionPane.*;
 
 String qrcode = showInputDialog ("your QRcode");
@@ -5,7 +6,6 @@ String qrcodes[]=loadStrings("c:/users/Lenovo/Desktop/project/everycode/qrcodes.
 String qr="";
 String qrco="";
 String dest="";
-String station="srs";
 boolean qrcod=false;
 for (int a=0; a<qrcodes.length; a++) {
  qr=qrcodes[a];
@@ -24,7 +24,7 @@ for (int a=0; a<qrcodes.length; a++) {
   }
   qrco="";
 }
-if(dest.equals(station)||dest.equals("mkt")){
+if(dest.equals(station)||dest.equals("srs")){
   print("the door will be opened");
 }else{
 print("the door won't be opened");
