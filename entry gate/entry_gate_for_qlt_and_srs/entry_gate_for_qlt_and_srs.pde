@@ -9,9 +9,9 @@ void draw () {
   String qrcode = showInputDialog ("your QRcode");
   String ticketstartpt = getStartingPoint (qrcode);
   if (ticketstartpt.equals(station_point)) {
-    print ("the door will be opened");
+    println ("the door will be opened");
   } else {
-    print("the door won't be opened");
+    println("the door won't be opened");
   }
 }
 String getStartingPoint(String qrcode) {

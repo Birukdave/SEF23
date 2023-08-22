@@ -1,7 +1,30 @@
-String station="srs";
 import static javax.swing.JOptionPane.*;
-
-String qrcode = showInputDialog ("your QRcode");
+String station="srs";
+void setup(){
+}
+void draw(){
+  String qrcodes[]=loadStrings("c:/users/Lenovo/Desktop/project/everycode/qrcodes.txt");
+ String qr="";
+  String qrcode = showInputDialog ("your QRcode");
+  String dest=getfinishingpt(qrcode);
+  if(dest.equals(station)||dest.equals("srs")){
+  println("the door will be opened");
+}else{
+println("the door won't be opened");
+}
+for (int a=0; a<qrcodes.length; a++) {
+  qr=qrcodes[a];
+  String splitted [] = split (qr, "/");
+  if (splitted[1].equals(qrcode)) {
+    String split [] = split (qrcodes[a], "/");
+    String stpt=split[0];
+    String qrCode = split[1];
+    String destpt=split[2];
+    qrcodes [a] = stpt+"/"+qrCode + "#/"+destpt;
+  }
+}saveStrings("c:/users/Lenovo/Desktop/project/everycode/qrcodes.txt", qrcodes);
+}
+String getfinishingpt(String qrcode){
 String qrcodes[]=loadStrings("c:/users/Lenovo/Desktop/project/everycode/qrcodes.txt");
 String qr="";
 String qrco="";
@@ -24,19 +47,5 @@ for (int a=0; a<qrcodes.length; a++) {
   }
   qrco="";
 }
-if(dest.equals(station)||dest.equals("srs")){
-  print("the door will be opened");
-}else{
-print("the door won't be opened");
+return dest;
 }
-for (int a=0; a<qrcodes.length; a++) {
-  qr=qrcodes[a];
-  String splitted [] = split (qr, "/");
-  if (splitted[1].equals(qrcode)) {
-    String split [] = split (qrcodes[a], "/");
-    String stpt=split[0];
-    String qrCode = split[1];
-    String destpt=split[2];
-    qrcodes [a] = stpt+"/"+qrCode + "#/"+destpt;
-  }
-}saveStrings("c:/users/Lenovo/Desktop/project/everycode/qrcodes.txt", qrcodes);
