@@ -1,5 +1,5 @@
-import static javax.swing.JOptionPane.*;
-
+import static javax.swing.JOptionPane.*;//
+// a commentsdfsadf
 String qrcode = showInputDialog ("your QRcode");
 String qrcodes[]=loadStrings("c:/users/Lenovo/Desktop/project/everycode/qrcodes.txt");
 String station="qlt";
