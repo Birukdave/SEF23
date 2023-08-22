@@ -7,6 +7,7 @@ String qrco="";
 String dest="";
 String station="mkt";
 boolean qrcod=false;
+boolean rechecker=true;
 for (int a=0; a<qrcodes.length; a++) {
   qr=qrcodes[a];
   int r=qr.indexOf("/");
@@ -23,9 +24,24 @@ for (int a=0; a<qrcodes.length; a++) {
     }
   }
   qrco="";
+  if(qr.endsWith("#")){
+  rechecker=false;
+  }
 }
-if (dest.equals(station)) {
+if (dest.equals(station)&&rechecker==true) {
   println("the door will be opened");
 } else {
   print("the door won't be opened");
 }
+for (int a=0;a<qrcodes.length;a++ ) {
+  qr=qrcodes[a];
+  int r=qr.indexOf("/");
+  int t=qr.indexOf("/", r+1);
+  for (int b=r+1; b>r&&b<t; b++) {
+    qrco+=qr.charAt(b);
+  }
+if (qrco.equals(qrcode)){
+  qrcodes [a] = qrcodes [a] + "#";
+}
+}
+saveStrings("c:/users/Lenovo/Desktop/project/everycode/qrcodes.txt", qrcodes);
