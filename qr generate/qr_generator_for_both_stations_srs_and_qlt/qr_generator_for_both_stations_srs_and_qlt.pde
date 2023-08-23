@@ -1,7 +1,7 @@
 import org.apache.commons.lang3.RandomStringUtils;
 import static javax.swing.JOptionPane.*;
 
-String starting_point="qlt";
+String starting_point="srs";
 
 void setup() {
 }

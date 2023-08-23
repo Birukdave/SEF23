@@ -1,10 +1,10 @@
 import processing.serial.*;
 import static javax.swing.JOptionPane.*;
 String station="srs";
-Serial uno;
+Serial exit;
 void setup () {
-  uno = new Serial (this, "COM14", 9600);
-  uno.bufferUntil ('\n');
+  exit = new Serial (this, "COM14", 9600);
+  exit.bufferUntil ('\n');
 }
 void draw(){
   String qrcodes[]=loadStrings("c:/users/Lenovo/Desktop/project/everycode/qrcodes.txt");
@@ -12,9 +12,9 @@ void draw(){
   String qrcode = showInputDialog ("your QRcode");
   String dest=getfinishingpt(qrcode);
   if(dest.equals(station)||dest.equals("mkt")){
-uno.write("open the door\n");
+exit.write("open the door\n");
 }else{
-uno.write("don't open the door\n");
+exit.write("don't open the door\n");
 }
 for (int a=0; a<qrcodes.length; a++) {
   qr=qrcodes[a];
