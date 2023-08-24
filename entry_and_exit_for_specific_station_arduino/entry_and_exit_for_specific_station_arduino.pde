@@ -18,7 +18,7 @@ void draw () {
     if (ticketstartpt.equals(station_point)) {
       uno.write ("open the door on entry\n");
     } else {
-      uno.write ("don't open the door on ent ry\n");
+      uno.write ("don't open the door on entry\n");
     }
   } else if (qrcode.endsWith("@")) {
     println("it is an exit code");
