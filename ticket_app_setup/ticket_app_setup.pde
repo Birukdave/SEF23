@@ -2,7 +2,7 @@ import static javax.swing.JOptionPane.*;
 Button confirm;
 Buttontype print;
 content moneyS, requiredM,Sdestination,destination;
-money stadium;
+money destmoney;
 passenger add;
 pluormin plus,minus;
 int a=1;
@@ -15,7 +15,7 @@ void setup () {
   requiredM=new content("Required money:", 840, 580);
   Sdestination=new content("selected destintion:",840,391);
   destination=new content(dest,1100,391);
-  stadium=new money(dest,1150,535);
+  destmoney=new money(dest,1150,535);
   add=new passenger(840,410);
   minus=new pluormin(875,442,36,36,#F51E1E,"-");
   plus=new pluormin(1130,442,36,36,#391EF5,"+");
@@ -28,29 +28,35 @@ void draw () {
   requiredM.draw();
   Sdestination.draw();
   destination.draw();
-  stadium.draw();
+  destmoney.draw();
   add.draw();
   plus.draw();
   minus.draw();
   
- textAlign(CENTER,CENTER);
+ textAlign(LEFT,CENTER);
   textSize(30);
-  text(a,999,442);
-}
+  text(a,980,442);
+    text(a*float(destmoney.fee),1050,560);;}
   void mouseReleased () {
-  if (confirm.hovered()) {
+ 
+ if (confirm.hovered()) {
     println ("Confirm Pressed");
   } else if (print.hovered ()) {
     println ("Print Pressed");
   }else if(minus.hovered()){
   println("minus");
-  println(stadium);
   a--;
+  textSize(30);
+  fill(0);
+  textAlign(LEFT,TOP);
   if(a<=0){
   a=0;
   }
   }else if(plus.hovered()){
   println("plus");
+  textSize(30);
+  fill(0);
+    textAlign(LEFT,TOP);
   a++;
   }
-}
+  }

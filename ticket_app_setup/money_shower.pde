@@ -3,6 +3,7 @@ class money {
   Table table = loadTable(tablePath, "header");
   String dest;
   float x, y;
+  String fee;
   money(String dest, float x, float y) {
     this.x=x;
     this.y=y;
@@ -14,7 +15,7 @@ class money {
     for (int a=0; a<table.getRowCount(); a++) {
       String station=table.getString (a, cIndex);
       if (dest.equals(station)) {
-  String fee=table.getString (a, fIndex);
+  fee=table.getString (a, fIndex);
      fill(0);
    textSize(27);
    textAlign(LEFT,BOTTOM);
