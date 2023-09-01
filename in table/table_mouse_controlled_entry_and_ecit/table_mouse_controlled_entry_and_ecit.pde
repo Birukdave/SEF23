@@ -1,11 +1,15 @@
+import processing.serial.*;
 import com.cage.zxing4p3.*;
 ZXING4P zxing;
 String station_point="srs";
 String tablePath = "C:/Users/Lenovo/Desktop/project/every station code and destination.csv";
 Table table;
+Serial uno;
 void setup() {
   table = loadTable (tablePath, "header");
   zxing = new ZXING4P ();
+  uno = new Serial (this, "COM14", 9600);
+  uno.bufferUntil ('\n');
 }
 
 void draw () {
@@ -25,18 +29,18 @@ void entryGate (File file) {
     println (code);
     String ticketstartpt = getStartingPoint (code);
     if (ticketstartpt.equals(station_point)) {
-      print ("open the door on entry\n");
+      uno.write ("open the door on entry\n");
     } else {
-      print ("don't open the door on entry\n");
+      uno.write ("don't open the door on entry\n");
     }
-      int CIndex = table.getColumnIndex ("code");
-  for (int a=0; a<table.getRowCount(); a++) {
-    String the_code=table.getString (a, CIndex);
-    if (the_code.equals(code)) {
-       table.setString(a,CIndex,code+"@"); 
-saveTable(table, tablePath);
+    int CIndex = table.getColumnIndex ("code");
+    for (int a=0; a<table.getRowCount(); a++) {
+      String the_code=table.getString (a, CIndex);
+      if (the_code.equals(code)) {
+        table.setString(a, CIndex, code+"@"); 
+        saveTable(table, tablePath);
+      }
     }
-  }
   }
 }
 void exitGate (File file) {
@@ -47,17 +51,17 @@ void exitGate (File file) {
     println (code);
     String dest=getfinishingpt(code);
     if (dest.equals(station_point)||dest.equals("mkt")) {
-      println("open the door on exit\n");
+      uno.write("open the door on exit\n");
     } else {
-      println("don't open the door on exit\n");
+      uno.write("don't open the door on exit\n");
     }
     int CIndex = table.getColumnIndex ("code");
     code=code+"@";
     for (int a=0; a<table.getRowCount(); a++) {
       String the_code=table.getString (a, CIndex);
       if (the_code.equals(code)) {
-        table.setString(a,CIndex,code+"#"); 
-saveTable(table, tablePath);
+        table.setString(a, CIndex, code+"#"); 
+        saveTable(table, tablePath);
       }
     }
   }

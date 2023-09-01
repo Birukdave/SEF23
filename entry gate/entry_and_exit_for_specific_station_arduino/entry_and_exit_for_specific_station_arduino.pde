@@ -18,7 +18,7 @@ void draw () {
     if (ticketstartpt.equals(station_point)) {
       uno.write ("open the door on entry\n");
     } else {
-      uno.write ("don't open the door on entery\n");
+      uno.write ("don't open the door on entry\n");
     }
   } else if (qrcode.endsWith("@")) {
     println("it is an exit code");
@@ -27,7 +27,7 @@ void draw () {
     String qr="";
     String dest=getfinishingpt(qrcode);
     if (dest.equals(station_point)||dest.equals("mkt")) {
-      uno.write("open the door on exit \n");
+      uno.write("open the door on exit\n");
     } else {
       uno.write("don't open the door on exit\n");
     }
