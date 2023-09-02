@@ -34,7 +34,7 @@ class Buttontype {
       stroke (blue);
       strokeWeight (3);
 
-      fill (blue,255*0.7);
+      fill (blue, 255*0.7);
       rect (x, y, w, h, radius); 
 
       fill (255);

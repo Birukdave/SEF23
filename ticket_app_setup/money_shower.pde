@@ -15,11 +15,11 @@ class money {
     for (int a=0; a<table.getRowCount(); a++) {
       String station=table.getString (a, cIndex);
       if (dest.equals(station)) {
-  fee=table.getString (a, fIndex);
-     fill(0);
-   textSize(27);
-   textAlign(LEFT,BOTTOM);
-     text(fee,x,y);
+        fee=table.getString (a, fIndex);
+        fill(0);
+        textSize(27);
+        textAlign(LEFT, BOTTOM);
+        text(fee, x, y);
       }
     }
   }
