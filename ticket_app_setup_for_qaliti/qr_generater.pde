@@ -10,7 +10,7 @@ class qrcode {
   int day=day();
   int month=month();
   int year=year();
-  String starting_point="srs";
+  String starting_point="qlt";
 
   qrcode(String dest) {
     this.dest=dest;
@@ -33,7 +33,7 @@ class qrcode {
     pg.textAlign(CENTER, CENTER);
     pg.fill(#3F115F);
 
-    pg.text("amount of birr", 70, height/2);
+    pg.text("amount of birr", 90, height/2);
 
 
     String code = RandomStringUtils.randomAlphanumeric (7);

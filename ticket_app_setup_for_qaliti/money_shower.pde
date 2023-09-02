@@ -10,8 +10,8 @@ class money {
     this.dest=dest;
   }
   void draw() {
-    int cIndex = table.getColumnIndex ("Stations");
-    int fIndex = table.getColumnIndex ("Fee");
+    int cIndex = table.getColumnIndex ("a");
+    int fIndex = table.getColumnIndex ("Fee2");
     for (int a=0; a<table.getRowCount(); a++) {
       String station=table.getString (a, cIndex);
       if (dest.equals(station)) {
