@@ -1,5 +1,4 @@
 class Button {
-  PFont f;
   String label;
   float x, y;
   int m;
@@ -9,43 +8,36 @@ class Button {
   Button (int m, String label) {
     this.label=label;
     this.m=m;
-
-    f=createFont("C:/Users/Lenovo/Documents/Processing/libraries/fonts/gotham-cufonfonts/Gotham-Bold.otf", 14);
   }
   void draw (float x, float y) {
     this.x = x;
     this.y = y;
-    
+
     if (m==0) {   
+      textFont(fonts.gotham.bold);
       if (hovered()) {
 
-        fill(#CDE9CE);
-        stroke(#4CAF50, 255*0.3);
+        fill(lightgreen);
+        noStroke();
         rect (x, y, w, h, radius);
         fill (#55B359);
         textSize (14);
-        textFont(f);
         textAlign (CENTER, CENTER);
         text (label.toUpperCase(), x + w/2, y + h/2);
         if (mousePressed) {
-          fill(#4CAF50, 255*0.5);
-          stroke(#4CAF50, 255*0.3);
+          fill(green, 255*0.5);
+          noStroke();
           rect (x, y, w, h, radius);
           fill (#55B359);
           textSize (14);
-          textFont(f);
           textAlign (CENTER, CENTER);
           text (label.toUpperCase(), x + w/2, y + h/2);
         }
       } else {
-        stroke (#4CAF50, 255*0.3);
-
-
-        fill (#4CAF50, 255*10/100);
+        noStroke();
+        fill (green, 255*10/100);
         rect (x, y, w, h, radius); 
-
         fill (#55B359);
-        textFont(f);
         textSize (14);
         textAlign (CENTER, CENTER);
         text (label.toUpperCase(), x + w/2, y + h/2);
@@ -56,28 +48,28 @@ class Button {
         fill(#C7E2C8);
         noStroke();
         rect (x, y, w, h, radius);
-        fill (#4CAF50);
-        textSize (14);
-        textFont(f);
+        fill (green);
+        textSize (16);
+        textFont(fonts.gotham.bold);
         textAlign (CENTER, CENTER);
         text (label, x + w/2, y + h/2);
         if (mousePressed) {
           fill(#87C98A);
           noStroke();
           rect (x, y, w, h, radius);
-          fill (255);
-          textSize (14);
-          textFont(f);
+          fill (white);
+          textSize (16);
+          textFont(fonts.gotham.bold);
           textAlign (CENTER, CENTER);
           text (label, x + w/2, y + h/2);
         }
       } else {
-        fill (255);
+        fill (white);
         noStroke();
         rect (x, y, w, h, radius); 
-        fill (#4CAF50);
-        textFont(f);
-        textSize (14);
+        fill (green);
+        textFont(fonts.gotham.bold);
+        textSize (16);
         textAlign (CENTER, CENTER);
         text (label, x + w/2, y + h/2);
       }
@@ -85,32 +77,32 @@ class Button {
       w=185;
       if (hovered()) {
         fill(#3F8742);
-        stroke(255);
+        stroke(white);
         strokeWeight(3);
         rect (x, y, w, h, radius);
-        fill (255);
-        textSize (14);
-        textFont(f);
+        fill (white);
+        textSize (16);
+        textFont(fonts.gotham.bold);
         textAlign (CENTER, CENTER);
         text (label, x + w/2, y + h/2);
         if (mousePressed) {
           fill(#346836);
           noStroke();
           rect (x, y, w, h, radius);
-          fill (255);
-          textSize (14);
-          textFont(f);
+          fill (white);
+          textSize (16);
+          textFont(fonts.gotham.bold);
           textAlign (CENTER, CENTER);
           text (label, x + w/2, y + h/2);
         }
       } else {
-        fill (#4CAF50);
+        fill (green);
         stroke(255);
         strokeWeight(3);
         rect (x, y, w, h, radius); 
-        fill (255);
-        textFont(f);
-        textSize (14);
+        fill (white);
+        textFont(fonts.gotham.bold);
+        textSize (16);
         textAlign (CENTER, CENTER);
         text (label, x + w/2, y + h/2);
       }

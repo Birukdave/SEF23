@@ -20,18 +20,18 @@ class sort {
       text(sorting2, x+w*1/4, y+h*3/4);
       stroke(2);
       line(x+w*3/4, y+h*1/4, x+w*3/4, y+h*3/4);
-       if (mousePressed) {
-         stroke(#707070);
-      strokeWeight(0);
-      fill(#4CAF50,255*0.5);
-      rect(x, y, w, h, radius);
-      fill(#4CAF50);
-      textSize(10);
-      text(sorting1, x+w*1/4, y+h*1/4);
-      text(sorting2, x+w*1/4, y+h*3/4);
-      stroke(2);
-      line(x+w*3/4, y+h*1/4, x+w*3/4, y+h*3/4);
-       }
+      if (mousePressed) {
+        stroke(#707070);
+        strokeWeight(0);
+        fill(#4CAF50, 255*0.5);
+        rect(x, y, w, h, radius);
+        fill(#4CAF50);
+        textSize(10);
+        text(sorting1, x+w*1/4, y+h*1/4);
+        text(sorting2, x+w*1/4, y+h*3/4);
+        stroke(2);
+        line(x+w*3/4, y+h*1/4, x+w*3/4, y+h*3/4);
+      }
     } else {
       stroke(#707070);
       strokeWeight(0);
