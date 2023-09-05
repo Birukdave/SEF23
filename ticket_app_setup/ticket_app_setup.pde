@@ -31,16 +31,20 @@ void draw () {
   add.draw();
   plus.draw();
   minus.draw();
+    fill(0);
+    textSize(30);
+     text("ethiopian land train corporation addis ababa's", 683, 40);
+    text("simple train transite survice", 683, 70);
   if (destination != null) {
     destination.draw();
   }
   if (destmoney != null) {
     destmoney.draw();
-
+  
     textAlign(CENTER, CENTER);
     textSize(30);
     text(a, 980, 442);
-    text(a*float(destmoney.fee), 1100, 580);
+    text(nfc(a*float(destmoney.fee), 1), 1100, 580);
   }
 }
 void mouseReleased () {

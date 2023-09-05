@@ -9,7 +9,7 @@ class content {
   void draw() {
     fill(0);
     textSize(27);
-    textAlign(CENTER,CENTER);
+    textAlign(CENTER, CENTER);
     text(fee, x, y);
   }
 }

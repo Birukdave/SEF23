@@ -1,24 +1,24 @@
 Stations,Fee,a,Fee2
 coca cola,2,srs,4
 st.ledeta,3,mkt,6
-tegabatd,5,,
-mexico,6,,
-legehar,8,,
-stadium,10,,
-st.estifanos,12,,
-bambis,14,,
-st.urael,15,,
-hayahulet 2,17,,
-hayahulet 1,18,,
-lem hotel,19,,
-megenagna,20,,
-gurd shola2,22,,
-gurd shola1,26,,
-management institution,28,,
-civil sevice college,30,,
-st.michael,32,,
-c.m.c,35,,
-meri,36,,
-ayat,38,,
-mkt,8,,
-srs,4,,
+tegabatd,5,coca cola,2
+mexico,6,st.ledeta,3
+legehar,8,tegabatd,5
+stadium,10,mexico,6
+st.estifanos,12,legehar,8
+bambis,14,stadium,10
+st.urael,15,st.estifanos,12
+hayahulet 2,17,bambis,14
+hayahulet 1,18,st.urael,15
+lem hotel,19,hayahulet 2,17
+megenagna,20,hayahulet 1,18
+gurd shola2,22,lem hotel,19
+gurd shola1,26,megenagna,20
+management institution,28,gurd shola2,22
+civil sevice college,30,gurd shola1,26
+st.michael,32,management institution,28
+c.m.c,35,civil sevice college,30
+meri,36,st.michael,32
+ayat,38,c.m.c,35
+mkt,8,meri,36
+srs,4,ayat,38

@@ -16,7 +16,7 @@ class qrcode {
     this.dest=dest;
     qrGen = new ZXING4P();
     pg = createGraphics(800, 600);
-    
+
     pg.beginDraw();
 
     pg.background (255);
@@ -33,7 +33,7 @@ class qrcode {
     pg.textAlign(CENTER, CENTER);
     pg.fill(#3F115F);
 
-    pg.text("amount of birr", 90, height/2);
+    pg.text(destmoney.fee+" ETB", 90, height/2);
 
 
     String code = RandomStringUtils.randomAlphanumeric (7);
@@ -50,8 +50,8 @@ class qrcode {
     saveTable (table, tablePath);
     QRCode = qrGen.generateQRCode(code, 300, 300);
     pg.imageMode (CENTER);
-    pg.image (QRCode,400,300);
-    
+    pg.image (QRCode, 400, 300);
+
     pg.save("C:\\Users/Lenovo/Desktop/project/every qrcode pictures/ticket"+code + ".png");
     pg.endDraw();
   }

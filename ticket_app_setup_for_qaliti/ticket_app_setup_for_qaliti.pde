@@ -6,8 +6,12 @@ money destmoney;
 passenger add;
 pluormin plus, minus;
 qrcode code;
+amount num;
 int a=1;
 String dest = "";
+String tablePath = "C:/Users/Lenovo/Desktop/project/report.csv";
+boolean date_exists=false;
+String eg="12";
 
 void setup () {
   size (1366, 768);
@@ -40,7 +44,7 @@ void draw () {
     textAlign(CENTER, CENTER);
     textSize(30);
     text(a, 980, 442);
-    text(a*float(destmoney.fee), 1100, 580);
+    text(nfc(a*float(destmoney.fee), 1), 1100, 580);
   }
 }
 void mouseReleased () {
@@ -51,6 +55,8 @@ void mouseReleased () {
     for (int i=1; i<=a; i++) {
       new qrcode(dest);
     }
+   new amount(dest,a);
+   new month(dest,a); 
   } else if (minus.hovered()) {
     println("minus");
     a--;
@@ -61,7 +67,7 @@ void mouseReleased () {
     println("plus");
     a++;
   } else {
-    dest = showInputDialog ("your destination", "mexico");
+    dest = showInputDialog ("your destination", "mkt");
     destination=new content(dest, 1150, 391);
     destmoney=new money(dest, 1050, 535);
   }
