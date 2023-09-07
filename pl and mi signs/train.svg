@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="23.198" height="34.799" viewBox="0 0 23.198 34.799">
+  <g id="icons8_train" transform="translate(-10 -3)">
+    <path id="Path_1" data-name="Path 1" d="M13.895,43.547l3.459-6.227-1.448-.8L12,43.547Zm16.095,0L26.53,37.32l1.448-.8,3.906,7.031Z" transform="translate(-0.343 -5.748)" fill="#1d6820"/>
+    <path id="Path_2" data-name="Path 2" d="M33.2,32.684V10.728C33.2,7.754,30.787,7,27.813,7H15.385C12.411,7,10,7.754,10,10.728V32.684Z" transform="translate(0 -0.686)" fill="#4caf50"/>
+    <path id="Path_3" data-name="Path 3" d="M23.314,3a3.314,3.314,0,1,0,3.314,3.314A3.317,3.317,0,0,0,23.314,3Z" transform="translate(-1.715)" fill="#ffeb3b"/>
+    <path id="Path_4" data-name="Path 4" d="M23.657,5a1.657,1.657,0,1,0,1.657,1.657A1.657,1.657,0,0,0,23.657,5Z" transform="translate(-2.058 -0.343)" fill="#0b420d"/>
+    <path id="Path_5" data-name="Path 5" d="M33.2,36.8a1.622,1.622,0,0,1-1.657,1.657H11.657A1.623,1.623,0,0,1,10,36.8V31H33.2Z" transform="translate(0 -4.802)" fill="#0b420d"/>
+    <path id="Path_6" data-name="Path 6" d="M13.314,29.657a1.657,1.657,0,1,1-1.657,1.657,1.658,1.658,0,0,1,1.657-1.657m0-1.657a3.314,3.314,0,1,0,3.314,3.314A3.317,3.317,0,0,0,13.314,28Zm16.57,1.657a1.657,1.657,0,1,1-1.657,1.657,1.658,1.658,0,0,1,1.657-1.657m0-1.657A3.314,3.314,0,1,0,33.2,31.314,3.317,3.317,0,0,0,29.884,28Z" transform="translate(0 -4.287)" fill="#ffeb3b"/>
+    <g id="Group_1" data-name="Group 1" transform="translate(11.657 10.457)">
+      <path id="Path_7" data-name="Path 7" d="M30.641,12H22.771v7.457h7.871a1.243,1.243,0,0,0,1.243-1.243V13.243A1.243,1.243,0,0,0,30.641,12Zm-9.528,0H13.243A1.243,1.243,0,0,0,12,13.243v4.971a1.243,1.243,0,0,0,1.243,1.243h7.871Z" transform="translate(-12 -12)" fill="#0b420d"/>
+    </g>
+    <g id="Group_2" data-name="Group 2" transform="translate(11.657 25.37)">
+      <path id="Path_8" data-name="Path 8" d="M13.657,30a1.657,1.657,0,1,0,1.657,1.657A1.657,1.657,0,0,0,13.657,30Zm16.57,0a1.657,1.657,0,1,0,1.657,1.657A1.657,1.657,0,0,0,30.227,30Z" transform="translate(-12 -30)" fill="#0b420d"/>
+    </g>
+  </g>
+</svg>

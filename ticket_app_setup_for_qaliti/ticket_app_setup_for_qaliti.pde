@@ -1,4 +1,4 @@
-import static javax.swing.JOptionPane.*;
+  import static javax.swing.JOptionPane.*;
 Button confirm;
 Buttontype print;
 content moneyS, requiredM, Sdestination, destination;
@@ -20,7 +20,6 @@ void setup () {
   moneyS =new content("Per ticket fee:", 930, 532);
   requiredM=new content("Total ticket fee:", 940, 580);
   Sdestination=new content("selected destintion:", 960, 391);
-
   add=new passenger(840, 410);
   minus=new pluormin(875, 442, 36, 36, #F51E1E, "-");
   plus=new pluormin(1130, 442, 36, 36, #391EF5, "+");
