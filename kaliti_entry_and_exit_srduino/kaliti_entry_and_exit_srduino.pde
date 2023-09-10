@@ -1,7 +1,7 @@
 import processing.serial.*;
 import com.cage.zxing4p3.*;
 ZXING4P zxing;
-String station_point="Saris";
+String station_point="Kaliti";
 String tablePath = "C:/Users/Lenovo/Desktop/project/every station code and destination.csv";
 Table table;
 Serial uno;

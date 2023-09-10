@@ -2,10 +2,9 @@ Fonts fonts;
 Button buttons [], print, discard;
 popu populas[];
 int sum=0;
-String labels [] = {"Abo Junction", "Saris", "Adey Abeba", "Nifas Silk 1", "Nifas Silk 2", "Lancha", "Temenja Yazh", "Riche", "Meshwalekya", "Stadium", "Leghar", "Mexico", "Tegbared", "St. Lideta", "Darmar", "Abnet", "Sebategna", "Autobus Tera", "Gojam Berenda", "Atikilt Tera", "Menilik Square" };
-String lables1[]={"Abnet", "Abo Junction", "Adey Abeba", "Atikilt Tera", "Autobus Tera", "Darmar", "Gojam Berenda", "Lancha", "Leghar", "Menilik Square", "Meshwalekya", "Mexico", "Nifas Silk 1", "Nifas Silk 2", "Riche", "Saris", "Sebategna", "St. Lideta", "Stadium", "Tegbared", "Temenja Yazh"};
+String labels [] = {"Abo Junction", "Adey Abeba", "Nifas Silk 1", "Nifas Silk 2", "Lancha", "Temenja Yazh", "Riche", "Meshwalekya", "Stadium", "Leghar", "Mexico", "Tegbared", "St. Lideta", "Darmar", "Abnet", "Sebategna", "Autobus Tera", "Gojam Berenda", "Atikilt Tera", "Menilik Square" };
+String lables1[]={"Abnet", "Abo Junction", "Adey Abeba", "Atikilt Tera", "Autobus Tera", "Darmar", "Gojam Berenda", "Lancha", "Leghar", "Menilik Square", "Meshwalekya", "Mexico", "Nifas Silk 1", "Nifas Silk 2", "Riche", "Sebategna", "St. Lideta", "Stadium", "Tegbared", "Temenja Yazh"};
 String destinations[]={"Menilik Square", "Atikilt Tera", "Gojam Berenda", "Autobus Tera", "Sebategna", "Abnet", "Darmar", "St. Lideta", "Tegbared", "Mexico", "Leghar", "Stadium", "Meshwalekya", "Riche", "Temenja Yazh", "Lancha", "Nifas Silk 2", "Nifas Silk 1", "Adey Abeba", "Saris", "Abo Junction"};
-//String popularones[]={"Abnet", "Abo Junction", "Adey Abeba", "Atikilt Tera", "Autobus Tera", "Darmar"};
 sort alpha;
 sdesti desti;  
 Labels departure, destination, tariff;
@@ -73,7 +72,7 @@ void setup() {
   }
   String popularones[]={first, second, third, forth, fifth, sixth};
   fonts = new Fonts ();  
-  departure = new Labels ("Departure:", "Kaliti", 911, 97);
+  departure = new Labels ("Departure:","Saris", 911, 97);
   destination = new Labels ("Destination:", dest, 910, 193);
   ticket = new sign("Tickets", 1, 910, 290);
   tariff = new Labels ("Tariff:", "", 910, 386);

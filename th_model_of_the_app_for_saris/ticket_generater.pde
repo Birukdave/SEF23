@@ -10,7 +10,7 @@ class qrcode {
   int day=day();
   int month=month();
   int year=year();
-  String starting_point="Kaliti";
+  String starting_point= "Saris";
 
   qrcode(String dest) {
     this.dest=dest;
