@@ -13,22 +13,6 @@ void setup() {
   size(800, 600);
 
   qrGen = new ZXING4P();
-   background (255);
-  font=loadFont("LucidaBright-DemiItalic-30.vlw");
-  textFont(font);
-  textAlign(CENTER, CENTER);
-  fill(0);
-  text("ethiopian land train corporation addis ababa's", width/2, 40);
-  text("simple train transite survice", width/2, 70);
-  textSize(30);
-  textAlign(LEFT,CENTER);
-  fill(#6A052C);
-  text(day+"/"+month+"/"+year,600,height/2);
-   textSize(30);
-  textAlign(LEFT,CENTER);
-  fill(#3F115F);
-  text("amount of birr",5,height/2);
-  
 }
 void draw() {
   String destination = showInputDialog ("enter your destination pleas");
